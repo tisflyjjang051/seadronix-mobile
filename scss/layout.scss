@@ -1,0 +1,51 @@
+/* a, span, em, input */
+
+@import "vars";
+@import "mixins";
+
+body {
+  font-family: "Lato", "Pretendard", sans-serif;
+  font-size: 16px;
+  color: #111;
+}
+.header {
+  $h: 60px;
+  position: fixed;
+  width: 100%;
+  height: $h;
+  background-color: #fff;
+  z-index: 99;
+  .logo {
+    height: $h;
+    a {
+      display: block;
+      height: $h;
+      padding: 15px 20px;
+      img {
+        height: $h - 30px;
+      }
+      .logo__img--light {
+        display: none;
+      }
+    }
+  }
+  .btn--all {
+    width: $h;
+    height: $h;
+    right: 0;
+    top: 0;
+    position: absolute;
+    //outline: 1px solid #f00;
+    //prettier-ignore
+    span {
+      width: 30px;
+      height: 2px;
+      background-color: #111;
+      position: absolute;
+      left: 15px;
+      &:nth-child(1) {top:19px;}
+      &:nth-child(2) {top:29px;}
+      &:nth-child(3) {top:39px;}
+    }
+  }
+}
