@@ -92,6 +92,9 @@ body {
           background-color: lighten($blue, 20);
           color: #fff;
           display: none;
+          &.on {
+            display: block;
+          }
           li {
             a {
               height: 40px;
