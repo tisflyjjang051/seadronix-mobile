@@ -53,17 +53,80 @@
 .visual__txt br {
   display: none;
 }
-.visual__txt .char {
-  animation: showTxt 1s ease 0s 1 forwards;
+.visual__txt .word {
+  overflow: hidden;
 }
-.visual__txt .char:nth-child(1) {
-  animation-delay: 0.1s;
+.section {
+  padding: 50px 20px;
 }
-.visual__txt .char:nth-child(2) {
-  animation-delay: 0.2s;
+.section h2 {
+  font-size: clamp(20px, 5vw, 36px);
+  margin-bottom: 30px;
+  word-break: keep-all;
+  line-height: 1.25;
 }
-.visual__txt .char:nth-child(3) {
-  animation-delay: 0.3s;
+.section h2 strong {
+  font-weight: 700;
+}
+.section p {
+  font-size: 14px;
+}
+.section br {
+  display: none;
+}
+.section .btn {
+  display: inline-flex;
+  padding: 15px 20px;
+  border: 1px solid rgb(4, 63, 189);
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(4, 63, 189);
+}
+
+.about__img {
+  margin-top: 30px;
+}
+.about__img img {
+  width: 100%;
+}
+
+.products {
+  padding-top: 0;
+}
+.products-banner a {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  margin-top: 30px;
+}
+.products-banner a img {
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+.products-banner a .more {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 36px;
+}
+.products-banner__title {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #fff;
+}
+.products-banner__title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.products-banner__title p {
+  font-size: 20px;
 }
 
 @keyframes showTxt {

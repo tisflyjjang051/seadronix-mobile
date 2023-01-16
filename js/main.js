@@ -43,5 +43,12 @@ new Swiper(".visual__list", {
   pagination: {
     el: ".visual__list .pagination",
     type: "bullets",
+    clickable: true,
+  },
+  cubeEffect: {
+    shadow: false,
   },
 });
+
+//visual__txt 움직이기
+gsap.from(".visual__txt .char", { y: 100, opacity: 0, duration: 1, ease: "power4", stagger: 0.02 });
