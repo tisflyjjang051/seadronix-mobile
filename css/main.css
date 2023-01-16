@@ -85,6 +85,10 @@
   font-size: 14px;
   color: rgb(4, 63, 189);
 }
+.section .btn--white {
+  border-color: #fff;
+  color: #fff;
+}
 
 .about__img {
   margin-top: 30px;
@@ -127,6 +131,95 @@
 }
 .products-banner__title p {
   font-size: 20px;
+}
+
+.banner {
+  background: rgb(4, 63, 189);
+  background: linear-gradient(90deg, rgb(4, 63, 189) 0%, rgb(0, 31, 97) 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.tech-banner {
+  margin-top: 30px;
+}
+.tech-banner a {
+  position: relative;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.tech-banner a img {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.tech-banner a .more {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 36px;
+}
+.tech-banner__title {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  word-break: keep-all;
+}
+.tech-banner__title h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.investors {
+  background-image: url("../images/main/main-investors.jpg");
+  color: #fff;
+}
+.investors__list {
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.investors__list li {
+  width: calc(50% - 20px);
+}
+.investors__list li img {
+  width: 100%;
+}
+
+.news .news-banner {
+  margin-top: 30px;
+}
+.news li {
+  width: 80%;
+  position: relative;
+}
+.news li img {
+  width: 100%;
+  border-radius: 20px;
+}
+.news li .news__txt h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.news li .sticker {
+  padding: 5px 10px;
+  background-color: rgb(214, 9, 9);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.news .btn {
+  display: none;
 }
 
 @keyframes showTxt {

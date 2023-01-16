@@ -50,5 +50,12 @@ new Swiper(".visual__list", {
   },
 });
 
+new Swiper(".news-banner", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+});
+
 //visual__txt 움직이기
 gsap.from(".visual__txt .char", { y: 100, opacity: 0, duration: 1, ease: "power4", stagger: 0.02 });
