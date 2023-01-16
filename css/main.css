@@ -34,3 +34,45 @@
 .visual__list .pagination .swiper-pagination-bullet-active {
   background-color: rgb(4, 63, 189);
 }
+
+.visual__txt {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  z-index: 2;
+  padding: 0 20px;
+  word-break: keep-all;
+  transform: translateY(-50%);
+}
+.visual__txt h3 {
+  font-weight: 700;
+  font-size: clamp(24px, 7.5vw, 48px);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.visual__txt br {
+  display: none;
+}
+.visual__txt .char {
+  animation: showTxt 1s ease 0s 1 forwards;
+}
+.visual__txt .char:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.visual__txt .char:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.visual__txt .char:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes showTxt {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

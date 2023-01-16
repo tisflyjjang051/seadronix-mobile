@@ -116,4 +116,15 @@ body {
       }
     }
   }
+  .language {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 700;
+    transform: translateY(-50%);
+    .active {
+      color: $blue;
+    }
+  }
 }

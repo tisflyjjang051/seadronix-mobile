@@ -114,3 +114,14 @@ body {
   border-radius: 100%;
   margin: 0 10px 0 20px;
 }
+.header .language {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+.header .language .active {
+  color: rgb(4, 63, 189);
+}

@@ -5,6 +5,8 @@
 //average(76, 56);
 //average(90, 80);
 
+Splitting();
+
 const btnAll = document.querySelector(".btn--all");
 const header = document.querySelector(".header");
 const depth01 = document.querySelectorAll(".gnb > .list > li > a");
