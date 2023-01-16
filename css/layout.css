@@ -125,3 +125,36 @@ body {
 .header .language .active {
   color: rgb(4, 63, 189);
 }
+
+.footer {
+  background-color: #021e59;
+  color: #fff;
+  padding: 20px;
+}
+.footer__item {
+  margin-top: 50px;
+}
+.footer__item:nth-child(1) {
+  margin-top: 0;
+}
+.footer__item h2 {
+  margin-bottom: 20px;
+}
+.footer__item dl {
+  display: flex;
+  margin-top: 10px;
+}
+.footer__item dl dt {
+  width: 70px;
+}
+.footer-logo {
+  height: 40px;
+}
+.footer-copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn-top {
+  display: none;
+}
